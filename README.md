@@ -1,4 +1,3 @@
-# 🔥 $SAUSY
-Built on Base. Made to Misbehave.
-Full flame edition with animated background and updated Tokenomics.
+# $SAUSY
+Full flame site with updated tokenomics.
 © 2025 $SAUSY. All Rights Reserved.
