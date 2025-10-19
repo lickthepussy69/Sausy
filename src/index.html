@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>$SAUSY — Built on Base. Made to Misbehave.</title>
+<meta name="description" content="$SAUSY on Base — Too Hot to HODL. Drip, Degens, and Delicious Gains — Get Wet. Get Wild. Get $SAUSY.">
+<meta property="og:title" content="$SAUSY — Built on Base. Made to Misbehave."/>
+<meta property="og:description" content="Too Hot to HODL. Get Wet. Get Wild. Get $SAUSY."/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="src/assets/preview-social-$SAUSY.png"/>
+<meta property="og:url" content="https://getsausy.vercel.app/"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@Sauspartymeme"/>
+<link rel="stylesheet" href="styles.css"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"></head>
+<body class="flicker">
+<div class="bg-layer layer1"></div><div class="bg-layer layer2"></div><div class="bg-layer layer3"></div>
+<div id="sparks"></div><script>
+const container=document.getElementById('sparks');for(let i=0;i<24;i++){const s=document.createElement('div');s.className='spark animate';s.style.left=Math.random()*100+'vw';s.style.top=(80+Math.random()*15)+'vh';s.style.setProperty('--x',((Math.random()*2-1)*40)+'vw');s.style.setProperty('--t',(10+Math.random()*20)+'s');s.style.opacity=(0.3+Math.random()*0.7).toFixed(2);container.appendChild(s);}
+</script>
+<header><div class="container bar z1"><div class="row" style="align-items:center"><div class="logo">S</div><div style="font-weight:700;letter-spacing:.2px">$SAUSY</div><span class="pill">Base</span></div>
+<nav class="z1"><a href="#presale">Presale</a><a href="#tokenomics">Tokenomics</a><a href="#howtobuy">How to Buy</a><a href="#roadmap">Roadmap</a><a href="#faq">FAQ</a></nav>
+<div class="z1"><a href="https://app.uniswap.org/explore/tokens/base/0xYOUR_CONTRACT" target="_blank" rel="noreferrer"><button class="btn btn-flame">Trade →</button></a></div></div></header>
+<main class="z1"><section class="hero"><div class="container grid grid-2"><div><h1 class="title">$SAUSY</h1>
+<div class="tagline heatwave"><div class="subtitle shimmerText">Built on Base. Made to Misbehave.</div><div class="subtitle" style="font-weight:800">Too Hot to HODL.</div>
+<div class="subtitle2">Drip, Degens, and Delicious Gains — Get Wet. Get Wild. Get $SAUSY.</div></div>
+<div class="hero-buttons"><a href="https://app.uniswap.org/explore/tokens/base/0xYOUR_CONTRACT" target="_blank" rel="noreferrer"><button class="btn btn-flame">Buy on Uniswap</button></a>
+<a href="https://dexscreener.com/base/0xYOUR_PAIR" target="_blank" rel="noreferrer"><button class="btn" style="border:1px solid rgba(255,255,255,.35);background:transparent">Charts</button></a>
+<a class="link" href="https://x.com/Sauspartymeme" target="_blank" rel="noreferrer">Follow on X</a></div>
+<div class="row" style="margin-top:22px"><div class="stat"><small>Token</small><strong>$SAUSY</strong></div><div class="stat"><small>Decimals</small><strong>18</strong></div><div class="stat"><small>Chain</small><strong>Base</strong></div><div class="stat"><small>Contract</small><strong>0xYOUR_CONTRACT</strong></div></div>
+<div class="row" style="margin-top:12px;max-width:720px"><input class="input" readonly value="0xYOUR_CONTRACT"/><a class="link" href="https://basescan.org/address/0xYOUR_CONTRACT" target="_blank">View on BaseScan</a></div></div>
+<div><div id="presale" class="card"><h3 style="margin:0 0 10px 0">Presale — Coming Soon</h3><p class="muted">Send ETH on Base to join (not live yet). Tokens will be claimable at TGE.</p>
+<div class="row" style="justify-content:space-between"><span class="muted">Progress</span><span class="muted">0%</span></div>
+<div style="height:8px;border-radius:10px;background:rgba(255,255,255,.14);overflow:hidden;margin:8px 0 12px 0"><div style="width:0%;height:100%;background-image:linear-gradient(135deg,var(--flame1),var(--flame2))"></div></div>
+<div class="grid grid-2"><div class="card" style="padding:12px"><div class="muted">Soft / Hard</div><div><strong>50 / 200 ETH</strong></div></div>
+<div class="card" style="padding:12px"><div class="muted">Rate</div><div><strong>100,000 $SAUSY / ETH</strong></div></div>
+<div class="card" style="padding:12px"><div class="muted">Min / Max</div><div><strong>0.01 / 5 ETH</strong></div></div>
+<div class="card" style="padding:12px"><div class="muted">Window</div><div><strong>Oct 20, 2025 → Oct 27, 2025</strong></div></div></div>
+<button class="btn" disabled style="width:100%;margin-top:12px;border:1px solid rgba(255,255,255,.35);background:transparent;color:#fff">Contribute (Opens Soon)</button>
+<p class="muted" style="margin-top:8px">Presale tokens lock through the entire presale; claim opens at TGE.</p></div></div></div></section>
+<section class="section container" id="features"><div class="grid grid-2">
+<div class="card"><h3>Renounced or Timelocked</h3><p class="muted">Ownership renounced post-TGE or timelocked with on-chain schedule.</p></div>
+<div class="card"><h3>LP Locked</h3><p class="muted">Liquidity locked to reduce rug risk and build trust.</p></div>
+<div class="card"><h3>Fair Launch DNA</h3><p class="muted">No insider dump mechanics; community first.</p></div>
+<div class="card"><h3>Built on Base</h3><p class="muted">Fast, cheap, and Ethereum-secured.</p></div></div></section>
+<section class="section container" id="tokenomics"><h2 style="margin:0 0 10px 0">Tokenomics</h2><p class="muted">Simple allocation designed for liquidity, marketing firepower, and sustainable growth.</p>
+<div class="grid grid-2" style="margin-top:14px"><div class="card"><h3>Allocation</h3>
+<div class="row" style="align-items:center;margin:10px 0"><div style="flex:1;height:8px;background:rgba(255,255,255,.14);border-radius:10px;overflow:hidden"><div style="width:50%;height:100%;background-image:linear-gradient(135deg,var(--flame1),var(--flame2))"></div></div><div style="width:140px;font-size:14px;margin-left:10px">Liquidity</div><strong>50%</strong></div>
+<div class="row" style="align-items:center;margin:10px 0"><div style="flex:1;height:8px;background:rgba(255,255,255,.14);border-radius:10px;overflow:hidden"><div style="width:25%;height:100%;background-image:linear-gradient(135deg,var(--flame1),var(--flame2))"></div></div><div style="width:140px;font-size:14px;margin-left:10px">Presale</div><strong>25%</strong></div>
+<div class="row" style="align-items:center;margin:10px 0"><div style="flex:1;height:8px;background:rgba(255,255,255,.14);border-radius:10px;overflow:hidden"><div style="width:15%;height:100%;background-image:linear-gradient(135deg,var(--flame1),var(--flame2))"></div></div><div style="width:140px;font-size:14px;margin-left:10px">Marketing</div><strong>15%</strong></div>
+<div class="row" style="align-items:center;margin:10px 0"><div style="flex:1;height:8px;background:rgba(255,255,255,.14);border-radius:10px;overflow:hidden"><div style="width:5%;height:100%;background-image:linear-gradient(135deg,var(--flame1),var(--flame2))"></div></div><div style="width:140px;font-size:14px;margin-left:10px">Team (vested)</div><strong>5%</strong></div>
+<div class="row" style="align-items:center;margin:10px 0"><div style="flex:1;height:8px;background:rgba(255,255,255,.14);border-radius:10px;overflow:hidden"><div style="width:5%;height:100%;background-image:linear-gradient(135deg,var(--flame1),var(--flame2))"></div></div><div style="width:140px;font-size:14px;margin-left:10px">Airdrops & Ecosystem</div><strong>5%</strong></div>
+</div><div class="card"><h3>Details</h3><p class="muted">Total Supply: 1,000,000,000 $SAUSY</p><p class="muted">Taxes: 0/0 at launch (subject to governance).</p><p class="muted">LP: Locked at least 6 months after TGE.</p><p class="muted">Contract: 0xYOUR_CONTRACT</p></div></div></section>
+<section class="section container" id="howtobuy"><h2 style="margin:0 0 10px 0">How to Buy</h2><ol class="muted" style="padding-left:18px"><li>Install a wallet (OKX, Coinbase Wallet, or MetaMask).</li><li>Switch network to <strong>Base</strong>.</li><li>Go to Uniswap, paste our contract, and swap ETH → $SAUSY.</li><li>Set slippage if needed and confirm.</li></ol></section>
+<section class="section container" id="roadmap"><h2 style="margin:0 0 10px 0">Roadmap</h2><div class="grid grid-2">
+<div class="card"><h3>Phase 1</h3><ul class="muted"><li>Token launch on Base</li><li>LP lock + verification</li><li>Creator collabs</li></ul></div>
+<div class="card"><h3>Phase 2</h3><ul class="muted"><li>Staking live</li><li>CEX outreach</li><li>Seasonal spicy drops</li></ul></div>
+<div class="card"><h3>Phase 3</h3><ul class="muted"><li>Merch & IRL events</li><li>Ecosystem grants</li><li>DAO proposals</li></ul></div></div></section>
+<section class="section container" id="faq"><h2 style="margin:0 0 10px 0">FAQ</h2><div class="grid grid-2">
+<div class="card"><h3>Is this financial advice?</h3><p class="muted">No. Crypto is risky; do your own research. Only invest what you can afford to lose.</p></div>
+<div class="card"><h3>Contract status?</h3><p class="muted">Contract will be verified on BaseScan. Ownership to be renounced or timelocked after launch. LP locked for at least 6 months.</p></div>
+<div class="card"><h3>Staking?</h3><p class="muted">Staking pool launching in Phase 2 with lock options and APY tiers. Details TBA.</p></div>
+<div class="card"><h3>Adult-content policy?</h3><p class="muted">Marketing may include mature themes. All content will comply with platform rules and applicable laws.</p></div></div></section></main>
+<footer class="footer"><div class="container" style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:center;padding:20px 0">
+<div class="row" style="align-items:center"><div class="logo">S</div><strong style="margin-left:8px">$SAUSY</strong></div>
+<div style="display:flex;gap:14px;justify-content:flex-end"><a class="link" href="https://x.com/Sauspartymeme" target="_blank">X</a><a class="link" href="https://t.me/+JaL91MSbwqs2MDZh" target="_blank">Telegram</a><a class="link" href="https://getsausy.vercel.app" target="_blank">Website</a></div></div>
+<div class="container muted" style="padding-bottom:24px">$SAUSY is a community-driven meme token on Base. No guarantees or promises; this is an experimental project.</div></footer>
+</body></html>
