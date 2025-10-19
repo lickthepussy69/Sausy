@@ -1,39 +1,144 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>$SAUSY ó Built on Base. Made to Misbehave.</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>$SAUSY ‚Äî Built on Base. Made to Misbehave.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
   <style>
-    body {
-      background: linear-gradient(180deg, #1a1024, #4a154b, #c3470b);
-      color: #fff;
-      font-family: Arial, sans-serif;
-      padding: 40px;
+    :root {
+      --flame1:#fb7185; --flame2:#f97316;
+      --bg1:#1a1024; --bg2:#4a154b; --bg3:#c3470b;
     }
-    h1 { font-size: 48px; }
-    h2 { margin-top: 40px; }
-    .muted { opacity: 0.9; }
+    * { box-sizing:border-box; }
+    body {
+      margin:0; color:#fff; font-family:'Inter',sans-serif;
+      background:linear-gradient(to bottom,var(--bg1),var(--bg2),var(--bg3));
+      overflow-x:hidden;
+    }
+    .container { max-width:1120px; margin:auto; padding:0 16px; }
+    header { position:sticky; top:0; background:rgba(0,0,0,.25); backdrop-filter:blur(10px); z-index:10; }
+    header .bar { display:flex; justify-content:space-between; align-items:center; padding:14px 0; }
+    .logo {
+      width:40px; height:40px; border-radius:14px;
+      display:grid; place-items:center; font-weight:800;
+      background:radial-gradient(circle at 30% 30%, var(--flame2), transparent 60%), radial-gradient(circle at 70% 70%, var(--flame1), transparent 70%);
+      box-shadow:0 0 20px rgba(249,115,22,.4);
+    }
+    nav a { color:#fff; margin:0 10px; text-decoration:none; opacity:.8; }
+    nav a:hover { opacity:1; }
+    .btn { padding:10px 16px; border:none; border-radius:14px; font-weight:600; cursor:pointer; }
+    .btn-flame { background:linear-gradient(135deg,var(--flame1),var(--flame2)); color:#fff; box-shadow:0 4px 20px rgba(249,115,22,.4); }
+    .title { font-size:56px; font-weight:800; margin:0; text-shadow:0 4px 20px rgba(0,0,0,.3); }
+    .subtitle { font-size:22px; margin:8px 0; }
+    .heatwave { animation:heatwave 3s ease-in-out infinite; }
+    @keyframes heatwave { 0%,100%{filter:blur(0px)} 50%{filter:blur(.3px)} }
+    .grid { display:grid; gap:18px; }
+    .grid-2 { grid-template-columns:repeat(2,minmax(0,1fr)); }
+    @media(max-width:800px){.grid-2{grid-template-columns:1fr;} .title{font-size:40px;}}
+    .card { background:rgba(0,0,0,.3); border:1px solid rgba(255,255,255,.15); border-radius:18px; padding:18px; }
+    .muted { opacity:.85; }
+    footer { border-top:1px solid rgba(255,255,255,.15); padding:20px 0; margin-top:40px; }
+    .spark {
+      position:fixed; width:3px; height:3px; background:#ffd166; border-radius:50%;
+      animation:drift var(--t) linear infinite; box-shadow:0 0 8px rgba(255,209,102,.9);
+    }
+    @keyframes drift {
+      0%{transform:translateY(0);opacity:.9}80%{opacity:.1}100%{transform:translateY(-120vh);opacity:0}
+    }
   </style>
 </head>
 <body>
-  <h1>$SAUSY</h1>
-  <p>Built on Base. Made to Misbehave.</p>
-  
+  <header>
+    <div class="container bar">
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div class="logo">S</div><strong>$SAUSY</strong><span style="font-size:12px;opacity:.6;">Base</span>
+      </div>
+      <nav>
+        <a href="#presale">Presale</a>
+        <a href="#tokenomics">Tokenomics</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a href="https://app.uniswap.org/explore/tokens/base/0xYOUR_CONTRACT" target="_blank">
+        <button class="btn btn-flame">Trade ‚Üí</button>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="container" style="padding:60px 0;">
+      <h1 class="title">$SAUSY</h1>
+      <p class="subtitle heatwave">Built on Base. Made to Misbehave.</p>
+      <p class="muted">Drip, Degens, and Delicious Gains ‚Äî Get Wet. Get Wild. Get $SAUSY.</p>
+      <div style="margin-top:20px;">
+        <a href="https://x.com/Sauspartymeme" style="color:#fff;text-decoration:none;">üê¶ Follow on X</a> |
+        <a href="https://t.me/+JaL91MSbwqs2MDZh" style="color:#fff;text-decoration:none;">üí¨ Telegram</a>
+      </div>
+    </section>
+
+    
 <section class="section container" id="tokenomics">
-  <h2>Tokenomics</h2>
-  <p class="muted">Balanced and transparent allocation ó fueling growth, liquidity, and community rewards.</p>
-  <ul class="muted" style="line-height:1.8em;">
-    <li>25% ó Owner</li>
-    <li>25% ó Presale</li>
-    <li>20% ó Liquidity (locked)</li>
-    <li>15% ó Marketing & Partnerships</li>
-    <li>10% ó Team (vesting)</li>
-    <li>5% ó Community rewards / Airdrops</li>
-  </ul>
+  <h2 style="margin:0 0 10px 0">Tokenomics</h2>
+  <p class="muted">Fair, fiery, and balanced ‚Äî built to keep liquidity tight and community hot.</p>
+  <div class="grid grid-2" style="margin-top:14px">
+    <div class="card">
+      <h3>Allocation</h3>
+      <ul class="muted" style="line-height:1.8em; list-style:none; padding-left:0;">
+        <li>25% ‚Äî Owner</li>
+        <li>25% ‚Äî Presale</li>
+        <li>20% ‚Äî Liquidity (locked)</li>
+        <li>15% ‚Äî Marketing & Partnerships</li>
+        <li>10% ‚Äî Team (vesting)</li>
+        <li>5% ‚Äî Community rewards / Airdrops</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Details</h3>
+      <p class="muted">Total Supply: 1,000,000,000 $SAUSY</p>
+      <p class="muted">Chain: Base</p>
+      <p class="muted">LP: Locked 6+ months post-launch</p>
+      <p class="muted">Ownership: Renounced or timelocked</p>
+      <p class="muted">Taxes: 0/0 at launch</p>
+    </div>
+  </div>
 </section>
 
-  <footer style="margin-top:60px;opacity:0.8;">
-    © 2025 $SAUSY. All Rights Reserved.
+
+    <section class="section container" id="roadmap">
+      <h2>Roadmap</h2>
+      <div class="grid grid-2">
+        <div class="card"><h3>Phase 1</h3><p class="muted">Token launch, LP lock, socials live.</p></div>
+        <div class="card"><h3>Phase 2</h3><p class="muted">Staking & marketing rollout.</p></div>
+        <div class="card"><h3>Phase 3</h3><p class="muted">CEX listings, merch, and community expansion.</p></div>
+      </div>
+    </section>
+
+    <section class="section container" id="faq">
+      <h2>FAQ</h2>
+      <div class="grid grid-2">
+        <div class="card"><h3>Is this financial advice?</h3><p class="muted">No ‚Äî it‚Äôs entertainment and community hype. DYOR always.</p></div>
+        <div class="card"><h3>When presale?</h3><p class="muted">Presale opens soon on Base ‚Äî stay tuned on Telegram.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;">
+      <strong>$SAUSY</strong>
+      <div style="font-size:13px;opacity:.7;">¬© 2025 $SAUSY. All Rights Reserved.</div>
+    </div>
   </footer>
+
+  <script>
+  for(let i=0;i<20;i++){
+    let s=document.createElement('div');
+    s.className='spark';
+    s.style.left=Math.random()*100+'vw';
+    s.style.top=(80+Math.random()*20)+'vh';
+    s.style.setProperty('--t',(8+Math.random()*12)+'s');
+    document.body.appendChild(s);
+  }
+  </script>
 </body>
 </html>
