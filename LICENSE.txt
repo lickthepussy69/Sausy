@@ -1,0 +1,11 @@
+Sausy Labs Proprietary License
+
+Copyright © 2025 Sausy Labs. All rights reserved.
+
+This project and its contents (including code, design, graphics, and media assets) are the property of Sausy Labs.
+You may view, fork privately, and deploy for internal or educational use, but redistribution, modification, or public reuse of any part of this repository is not permitted without written consent from Sausy Labs or its authorized representatives.
+
+Any commercial use, derivative branding, or asset replication — including use of the Sausy, SausParty, or SausDeGen names, logos, or visual identity — is strictly prohibited unless a separate license agreement has been signed.
+
+For partnership, reuse, or licensing inquiries, contact:
+📧 Minkc6861@gmail.com
